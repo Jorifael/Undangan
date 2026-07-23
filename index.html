@@ -173,7 +173,7 @@
   @keyframes dropline{ 0%{transform:scaleY(0); transform-origin:top;} 50%{transform:scaleY(1); transform-origin:top;} 51%{transform-origin:bottom;} 100%{transform:scaleY(0); transform-origin:bottom;} }
 
   /* reveal on scroll */
-  .reveal{ opacity:0; transform:translateY(24px); transition: opacity .9s ease, transform .9s ease; }
+  .reveal{ opacity:0; transform:translateY(px); transition: opacity .9s ease, transform .9s ease; }
   .reveal.in{ opacity:1; transform:translateY(0); }
 
   /* ---------- QUOTE ---------- */
@@ -338,7 +338,7 @@
   <p class="subtitle">Kami Ingin Mengundang Anda Pada Acara</p>
   <h1>Sweet</h1>
   <div class="number">Seventeen</div>
-  <p class="date-line">Princess Emelly &nbsp;•&nbsp; Sabtu, 24 Juli</p>
+  <p class="date-line">Princess Emelly &nbsp;•&nbsp; Sabtu,  Juli</p>
   <div class="scroll-cue"><span>Gulir</span><span class="line"></span></div>
 </section>
 
@@ -354,7 +354,7 @@
   <div class="rule"></div>
   <div class="event-card">
     <h3>Sweet Seventeen Princess Emelly</h3>
-    <div class="big-date">Sabtu, 24 Juli</div>
+    <div class="big-date">Sabtu, 25 Juli</div>
     <p>Pukul 18.00 WITA &mdash; selesai</p>
     <p style="margin-top:0.8rem;">Emelly's Home<br>Tataaran 1, Lingkungan 2</p>
     <a class="venue-btn"
@@ -425,7 +425,7 @@
   revealEls.forEach(el => io.observe(el));
 
   // countdown — ubah tanggal sesuai acara
-  const target = new Date('2026-07-24T18:00:00+08:00').getTime();
+  const target = new Date('2026-07-25T18:00:00+08:00').getTime();
   function updateCountdown(){
     const now = new Date().getTime();
     const diff = target - now;
